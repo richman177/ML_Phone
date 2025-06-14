@@ -50,4 +50,4 @@ class RefreshToken(Base):
     token: Mapped[str] = mapped_column(String, unique=True, nullable=False)
     created_data: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
     user_id: Mapped[int] = mapped_column(ForeignKey('user_profile.id'))
-    user: Mapped['UserProfile'] = relationship('UserProfile', back_populates='tokens')
+    user: Mapped['UserProfile'] = relationship('UserProfile', back_populates='tokens')    
