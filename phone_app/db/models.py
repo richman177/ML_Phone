@@ -45,7 +45,7 @@ class Phone(Base):
 
 
 class RefreshToken(Base):
-    __tablename__ = 'refresh_token'
+    __tablename__ = 'refresh_token'    
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     token: Mapped[str] = mapped_column(String, unique=True, nullable=False)
     created_data: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
