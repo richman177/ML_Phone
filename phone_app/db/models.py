@@ -1,7 +1,7 @@
 from sqlalchemy import Integer, String, ForeignKey, DateTime
 from phone_app.db.database import Base
 from typing import Optional, List
-from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy.orm import Mapped, mapped_column, relationship    
 from datetime import datetime
 from passlib.hash import bcrypt
 
