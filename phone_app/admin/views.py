@@ -10,5 +10,5 @@ class UserProfileAdmin(ModelView, model=UserProfile):
 
 class PredictAdmin(ModelView, model=Phone):
     column_list = [Phone.id, Phone.rating]
-    name = 'Phone'
+    name = 'Phone' 
     name_plural = 'Phones'
