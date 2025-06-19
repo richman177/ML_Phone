@@ -4,7 +4,7 @@ from phone_app.db.models import UserProfile, Phone
 
 class UserProfileAdmin(ModelView, model=UserProfile):
     column_list = [UserProfile.id, UserProfile.username]
-    name = 'User'
+    name = 'User' 
     name_plural = 'Users'
 
 
