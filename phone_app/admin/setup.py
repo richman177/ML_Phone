@@ -1,5 +1,5 @@
 from fastapi import FastAPI 
-from sqladmin import Admin
+from sqladmin import Admin 
 from .views import UserProfileAdmin, PredictAdmin
 from phone_app.db.database import engine
   
