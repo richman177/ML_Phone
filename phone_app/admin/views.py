@@ -1,4 +1,4 @@
-from sqladmin import ModelView
+from sqladmin import ModelView 
 from phone_app.db.models import UserProfile, Phone
 
 
